@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "CaWorkshop.WebUI"
+  "defaultProject": "CaWorkshop.WebUI",
+  "cli": {
+    "analytics": false
+  }
 }
