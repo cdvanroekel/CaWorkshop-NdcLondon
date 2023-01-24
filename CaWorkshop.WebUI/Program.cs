@@ -8,6 +8,7 @@ using CaWorkshop.Infrastructure;
 using CaWorkshop.Infrastructure.Persistence;
 using CaWorkshop.Application.Common.Interfaces;
 using FluentValidation;
+using CaWorkshop.WebUI.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 

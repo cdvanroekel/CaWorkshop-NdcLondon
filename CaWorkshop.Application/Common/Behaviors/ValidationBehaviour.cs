@@ -1,5 +1,7 @@
 ﻿using FluentValidation;
 using MediatR;
+using ValidationException =
+    CaWorkshop.Application.Common.Exceptions.ValidationException;
 
 namespace CaWorkshop.Application.Common.Behaviours;
 
