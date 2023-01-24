@@ -6,6 +6,8 @@ using CaWorkshop.Infrastructure.Identity;
 using CaWorkshop.Application;
 using CaWorkshop.Infrastructure;
 using CaWorkshop.Infrastructure.Persistence;
+using CaWorkshop.Application.Common.Interfaces;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 

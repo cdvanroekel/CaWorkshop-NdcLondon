@@ -1,12 +1,13 @@
 ﻿using CaWorkshop.Application.Common.Interfaces;
 using CaWorkshop.Domain.Entities;
 using MediatR;
+using System.ComponentModel.DataAnnotations;
 
 namespace CaWorkshop.Application.TodoLists.Commands.CreateTodoList;
 
 public class CreateTodoListCommand : IRequest<int>
 {
-    public string Title { get; set; } = string.Empty;
+    public string? Title { get; set; }
 }
 
 public class CreateTodoListCommandHandler

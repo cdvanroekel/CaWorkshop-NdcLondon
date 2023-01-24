@@ -1,24 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <Compile Remove="Common\Mappings\IMapFrom.cs" />
-    <Compile Remove="Common\Mappings\MappingProfile.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CaWorkshop.Domain\CaWorkshop.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Ardalis.GuardClauses" Version="4.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\Mappings\" />
     <Folder Include="TodoItems\" />
   </ItemGroup>
 
