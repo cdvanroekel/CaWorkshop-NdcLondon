@@ -1,6 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <Compile Remove="Common\Mappings\IMapFrom.cs" />
+    <Compile Remove="Common\Mappings\MappingProfile.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CaWorkshop.Domain\CaWorkshop.Domain.csproj" />
   </ItemGroup>
 
@@ -13,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Common\Mappings\" />
     <Folder Include="TodoItems\" />
   </ItemGroup>
 

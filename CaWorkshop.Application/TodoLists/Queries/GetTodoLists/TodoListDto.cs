@@ -1,9 +1,10 @@
-﻿using CaWorkshop.Application.Common.Mappings;
+﻿using AutoMapper;
 using CaWorkshop.Domain.Entities;
 
 namespace CaWorkshop.Application.TodoLists.Queries.GetTodoLists;
 
-public class TodoListDto : IMapFrom<TodoList>
+[AutoMap(typeof(TodoList))]
+public class TodoListDto
 {
     public int Id { get; set; }
 

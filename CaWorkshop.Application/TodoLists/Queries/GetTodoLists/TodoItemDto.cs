@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using CaWorkshop.Application.Common.Mappings;
 using CaWorkshop.Domain.Entities;
 
 namespace CaWorkshop.Application.TodoLists.Queries.GetTodoLists;
 
-public class TodoItemDto : IMapFrom<TodoItem>
+[AutoMap(typeof(TodoItem))]
+public class TodoItemDto
 {
     public int Id { get; set; }
 
@@ -18,10 +18,10 @@ public class TodoItemDto : IMapFrom<TodoItem>
 
     public string? Note { get; set; }
 
-    public void Mapping(Profile profile)
-    {
-        profile.CreateMap<TodoItem, TodoItemDto>()
-            .ForMember(d => d.Priority, opt =>
-                opt.MapFrom(s => (int)s.Priority));
-    }
+    //public void Mapping(Profile profile)
+    //{
+    //    profile.CreateMap<TodoItem, TodoItemDto>()
+    //        .ForMember(d => d.Priority, opt =>
+    //            opt.MapFrom(s => (int)s.Priority));
+    //}
 }
