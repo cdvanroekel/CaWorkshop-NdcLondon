@@ -10,10 +10,10 @@ using Microsoft.AspNetCore.Http;
 namespace CaWorkshop.WebUI.Controllers;
 
 public class TodoListsController : ApiControllerBase
-{ 
+{
     // GET: api/TodoLists
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<TodoList>>> GetTodoLists()
+    public async Task<ActionResult<TodosVm>> GetTodoLists()
     {
         return await Mediator.Send(new GetTodoListsQuery());
     }

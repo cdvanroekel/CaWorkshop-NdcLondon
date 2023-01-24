@@ -1,7 +1,7 @@
 ﻿using CaWorkshop.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace CaWorkshop.Infrastructure.Data;
+namespace CaWorkshop.Infrastructure.Persistence;
 
 public class ApplicationDbContextInitialiser
 {

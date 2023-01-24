@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace CaWorkshop.Infrastructure.Data.Configurations;
+namespace CaWorkshop.Infrastructure.Persistence.Configurations;
 
 public class TodoListConfiguration : IEntityTypeConfiguration<TodoList>
 {

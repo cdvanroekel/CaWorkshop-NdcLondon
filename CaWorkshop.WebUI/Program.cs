@@ -3,10 +3,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using CaWorkshop.Infrastructure.Identity;
-using CaWorkshop.Infrastructure.Data;
 using CaWorkshop.Application;
 using CaWorkshop.Infrastructure;
-
+using CaWorkshop.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 

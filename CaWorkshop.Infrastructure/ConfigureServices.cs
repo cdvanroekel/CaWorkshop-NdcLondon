@@ -1,10 +1,10 @@
 ﻿using CaWorkshop.Infrastructure.Identity;
-using CaWorkshop.Infrastructure.Data;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using CaWorkshop.Application.Common.Interfaces;
+using CaWorkshop.Infrastructure.Persistence;
 
 namespace CaWorkshop.Infrastructure;
 

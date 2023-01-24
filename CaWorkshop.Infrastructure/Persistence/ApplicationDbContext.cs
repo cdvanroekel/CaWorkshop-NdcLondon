@@ -7,7 +7,7 @@ using System.Reflection;
 using CaWorkshop.Infrastructure.Identity;
 using CaWorkshop.Application.Common.Interfaces;
 
-namespace CaWorkshop.Infrastructure.Data;
+namespace CaWorkshop.Infrastructure.Persistence;
 
 public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, IApplicationDbContext
 {
@@ -27,5 +27,14 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, 
 
         builder.ApplyConfigurationsFromAssembly(
             Assembly.GetExecutingAssembly());
+    }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder
+            .LogTo(Console.WriteLine)
+            .EnableDetailedErrors();
+
+        base.OnConfiguring(optionsBuilder);
     }
 }
